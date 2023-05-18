@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.gradientBackground {
+  background: linear-gradient(45deg,#1e577e,#c00d5b);
+  background-size: 300% 300%;
+  animation: gradient-animation 10s linear infinite;
+  height: 100vh;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
